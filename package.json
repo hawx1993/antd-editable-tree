@@ -1,0 +1,49 @@
+{
+  "name": "antd-editable-tree",
+  "version": "0.0.1",
+  "description": "An Editable tree component developed based on antd tree component",
+  "scripts": {
+    "build": "npx father  build",
+    "version": "npm run build",
+    "prepublishOnly": "npm version patch && git push",
+    "release": "npm run build && npm publish"
+  },
+  "module": "dist/esm/index.js",
+  "main": "dist/cjs/index.js",
+  "typings": "dist/esm/index.d.ts",
+  "engines": {
+    "node": ">=12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hawx1993/antd-editable-tree.git"
+  },
+  "publishConfig": {
+    "ignore": [
+      "src/"
+    ]
+  },
+  "peerDependencies": {
+    "react": ">=17.0.2"
+  },
+  "keywords": [
+    "editable-tree"
+  ],
+  "devDependencies": {
+    "@babel/core": "7.19.6",
+    "@babel/preset-env": "7.19.4",
+    "@babel/preset-typescript": "7.18.6",
+    "@types/react": "17.0.21",
+    "father": "4.1.0",
+    "react": "17.0.2"
+  },
+  "author": "trigkit4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hawx1993/antd-editable-tree/issues"
+  },
+  "homepage": "https://github.com/hawx1993/antd-editable-tree#readme",
+  "dependencies": {
+    "antd": "^4.24.1"
+  }
+}
